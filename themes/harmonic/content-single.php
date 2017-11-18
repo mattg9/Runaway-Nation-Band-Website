@@ -38,17 +38,9 @@ $formats = get_theme_support( 'post-formats' );
 
 		<?php if ( 'post' == get_post_type() ) : // Hide category and tag text for pages on Search ?>
 
-		<?php
-		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', __( ' ', 'harmonic' ) );
-		if ( $tags_list ) :
-		?>
-			<span class="tags-links">
-				<?php printf( __( '%1$s', 'harmonic' ), $tags_list ); ?>
-			</span>
-		<?php endif; // End if $tags_list ?>
+			<?php the_tags( '<span class="tags-links">', '', '</span>' ); ?>
 
-		<?php edit_post_link( __( 'Edit', 'harmonic' ), '<span class="edit-link">', '</span>' ); ?>
+			<?php edit_post_link( __( 'Edit', 'harmonic' ), '<span class="edit-link">', '</span>' ); ?>
 
 		<?php endif; // End if 'post' == get_post_type() ?>
 	</footer><!-- .entry-meta -->

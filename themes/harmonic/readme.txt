@@ -50,6 +50,71 @@ Harmonic allows you display links to your social media profiles, like Twitter an
 
 == Changelog ==
 
+= 27 July 2017 =
+* Make sure masonry doesn't fire on mobile devices, since projects are displayed in one column anyway.
+
+= 26 July 2017 =
+* Update menu JavaScript, so open dropdowns close when you click off of them.
+* Fix thumbnail grid gallery columns not displaying properly.
+* Making header fixed all the time, and adding JavaScript to make sure there's sufficient space under the header. This prevents the content from jumping once a visitor starts scrolling.
+
+= 25 July 2017 =
+* Add clearfix to front page widget area, to prevent widgets from being cut off when portfolio panel is hidden. Add specific text colour for Google Translate widget, so it's not overwritten by the theme.
+* Add fallback background position for panel images, so they are aligned the same in cases where the JavaScript alignment isn't triggered, like on mobile devices.
+
+= 24 July 2017 =
+* Remove padding from bottom of single titles - it was causing links near the top of the content area to become unclickable.
+* Tweak the opacity setting of latest news section, so that the content is at least slightly visible initailly, to get rid of the perceived gap.
+
+= 4 July 2017 =
+* Add hover styles to social icons widget.
+
+= 10 May 2017 =
+* Tweak the font annotations, to properly chnage size of code snippets.
+
+= 27 March 2017 =
+* Add background color to hr.
+
+= 22 March 2017 =
+* add Custom Colors annotations directly to the theme
+* move fonts annotations directly into the theme
+
+= 21 February 2017 =
+* Remove unnecessary extra post content in Headstart.
+
+= 6 February 2017 =
+* Replace get_the_tag_list() with the_tags() for a more straightforward approach that prevents potential fatal errors.
+
+= 2 February 2017 =
+* remove from CSS in wp-content/themes/pub
+
+= 24 November 2016 =
+* Add support for Content Options - Featured Images
+
+= 10 November 2016 =
+* Add Headstart translations (strand ID 9900).
+
+= 19 October 2016 =
+* Use CSS selector for Content Options
+
+= 4 October 2016 =
+* Add the new `fixed-menu` feature tag to the stylesheet.
+
+= 28 September 2016 =
+* Add high z-index to the DM icons so they're not hidden by other high-level elements.
+
+= 24 August 2016 =
+* Fix button colour of the read-more link
+
+= 8 August 2016 =
+* Update atatchment URL to a smaller image.
+
+= 26 July 2016 =
+* Add support for Content Options
+
+= 11 July 2016 =
+* adds one-page tag to style.css
+
 = 7 July 2016 =
 * Let WordPress manage the document title by adding theme support
 

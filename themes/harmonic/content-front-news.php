@@ -37,8 +37,8 @@
 
 			<div class="hsContent"
 			data-center="opacity: 1"
-			data-center-top="opacity: 0"
-			data--100-bottom="opacity: 0;"
+			data-center-top="opacity: 0.4"
+			data--100-bottom="opacity: 1;"
 			data-anchor-target="#slide-2">
 
 				<div id="news-section">

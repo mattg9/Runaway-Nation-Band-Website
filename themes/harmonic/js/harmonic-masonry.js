@@ -1,6 +1,11 @@
 (function($) {
     $(document).ready(function() {
-            var $blocks = $( "#archive-container" );
+
+        if( $(window).width() < 641 ) {
+            return;
+        }
+
+        var $blocks = $( "#archive-container" );
 
         $blocks.imagesLoaded( function(){
             $blocks.masonry({

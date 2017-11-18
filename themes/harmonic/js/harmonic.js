@@ -41,18 +41,39 @@
         $( this ).attr( 'aria-expanded', $( this ).attr( 'aria-expanded' ) == 'false' ? 'true' : 'false');
     } );
 
-})(jQuery);
+	$( document ).on( 'click', function( event ) {
+		if ( ! $( event.target ).closest( '#site-navigation' ).length ) {
+			$( '.showsub-toggle' ).removeClass( 'sub-on' ).attr( 'aria-expanded', 'false' );
+			$( '#site-navigation .children, #site-navigation .sub-menu' ).removeClass( 'sub-on' );
+		}
+	} );
 
-(function($) {
-    var $window = $(window);
-    var nav = $('#masthead');
-    $window.scroll(function(){
-    if ($window.scrollTop() >= 300) {
-            nav.addClass('fixed-header');
-        }
-        else {
-            nav.removeClass('fixed-header');
-        }
-    });
+   	/**
+   	 * Add space at the top of the page, for fixed headers.
+   	 */
+	function fixHeaderSpace() {
+		var nav = $('#masthead'),
+			navHeight = nav.innerHeight();
 
+		// Check if the menu is currently fixed, to determine if we're on a mobile screen or not.
+		if ( 'fixed' === $( nav ).css( 'position' ) ) {
+			$( '#skrollr-body' ).css('padding-top', navHeight );
+		} else {
+			$( '#skrollr-body' ).css('padding-top', '0' );
+		}
+	}
+
+	// Fire on document ready
+	$( document).ready( function() {
+		fixHeaderSpace();
+	} );
+
+	//Fire on window resize
+	var resizeTimer;
+	$( window ).on( 'resize', function() {
+		clearTimeout( resizeTimer );
+		resizeTimer = setTimeout( function() {
+			fixHeaderSpace();
+		}, 250 );
+	} );
 })(jQuery);

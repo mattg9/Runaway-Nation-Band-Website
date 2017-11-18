@@ -27,18 +27,6 @@
 				<span id="menu-title"><?php _e( 'Menu', 'harmonic' ); ?></span>
 			</div><!-- #mobile-link -->
 			<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<?php
-			if ( has_nav_menu( 'social' ) ) : ?>
-				<div id="social-links-wrapper">
-					<?php wp_nav_menu( array(
-						'theme_location'  => 'social',
-						'container_class' => 'social-links',
-						'menu_class'      => 'clear',
-						'link_before'     => '<span class="screen-reader-text">',
-						'link_after'      => '</span>',
-					) ); ?>
-				</div>
-			<?php endif; ?>
 		</div><!-- #mobile-panel -->
 		<div id="mobile-block">
 			<nav id="site-navigation" class="main-navigation" role="navigation">

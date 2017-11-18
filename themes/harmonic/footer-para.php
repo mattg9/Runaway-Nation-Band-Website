@@ -9,7 +9,7 @@
 ?>
 
 
-		<div id="footer-nav-wrapper" style="height:60px;">
+		<div id="footer-nav-wrapper">
 			<nav id="footer-navigation" class="main-navigation" role="navigation">
 				<a class="skip-link screen-reader-text" href="#content"><?php _e( 'Skip to content', 'harmonic' ); ?></a>
 				<ul class="menu">
@@ -44,7 +44,10 @@
 			</nav><!-- #footer-navigation .main-navigation -->
 
 			<div class="site-info">
-				<p> Runaway Nation &copy; 2017 <p>
+				<?php do_action( 'harmonic_credits' ); ?>
+				<a href="http://wordpress.org/" rel="generator"><?php printf( __( 'Proudly powered by %s', 'harmonic' ), 'WordPress' ); ?></a>
+				<span class="sep"> | </span>
+				<?php printf( __( 'Theme: %1$s by %2$s.', 'harmonic' ), 'Harmonic', '<a href="https://wordpress.com/themes/" rel="designer">WordPress.com</a>' ); ?>
 			</div><!-- .site-info -->
 
 		</div><!-- #footer-nav-wrapper -->

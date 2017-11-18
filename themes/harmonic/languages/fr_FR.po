@@ -2,16 +2,20 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Harmonic package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-06-13 09:17:59+0000\n"
+"PO-Revision-Date: 2017-03-23 07:22:30+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n > 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: fr\n"
 "Project-Id-Version: WordPress.com - Themes - Harmonic\n"
 
-#: inc/jetpack.php:136
+#: inc/wpcom-colors.php:55
+msgid "Links & Buttons"
+msgstr "Liens et boutons"
+
+#: inc/jetpack.php:142
 msgid "Older projects"
 msgstr "Projets suivants"
 
@@ -188,31 +192,31 @@ msgstr "Aspect des vignettes de portfolio"
 msgid "Harmonic Theme Options"
 msgstr "Options du thème Harmonic"
 
-#: header-featureimage.php:28 header-para.php:28 header-portfolio.php:28
-#: header-singleportfolio.php:28 header.php:28
+#: header-featureimage.php:27 header-para.php:27 header-portfolio.php:27
+#: header-singleportfolio.php:27 header.php:27
 msgid "Menu"
 msgstr "Menu"
 
-#: functions.php:101
+#: functions.php:109
 msgid "Front page"
 msgstr "Page d'Accueil"
 
-#: functions.php:93
+#: functions.php:101
 msgid "Sidebar"
 msgstr "Colonne latérale"
 
-#: functions.php:67
+#: functions.php:75
 msgid "Social Links Menu"
 msgstr "Menu des Liens Sociaux"
 
-#: functions.php:66
+#: functions.php:74
 msgid "Primary Menu"
 msgstr "Menu principal"
 
-#: footer-para.php:14 header-featureimage.php:34 header-featureimage.php:56
-#: header-para.php:35 header-para.php:57 header-portfolio.php:34
-#: header-portfolio.php:56 header-singleportfolio.php:35
-#: header-singleportfolio.php:57 header.php:35 header.php:57
+#: footer-para.php:14 header-featureimage.php:33 header-featureimage.php:55
+#: header-para.php:34 header-para.php:56 header-portfolio.php:33
+#: header-portfolio.php:55 header-singleportfolio.php:34
+#: header-singleportfolio.php:56 header.php:34 header.php:56
 msgid "Skip to content"
 msgstr "Aller au contenu principal"
 
@@ -226,18 +230,9 @@ msgstr "Thème %1$s par %2$s."
 msgid "Proudly powered by %s"
 msgstr "Fièrement propulsé par %s"
 
-#: content.php:61
+#: content.php:54
 msgid "Permalink to %s"
 msgstr "Permalien vers %s"
-
-#: content-single.php:47
-msgid "%1$s"
-msgstr "%1$s"
-
-#. translators: used between list items, there is a space after the comma
-#: content-single.php:43
-msgid " "
-msgstr ""
 
 #: content-single.php:29 content.php:13
 msgid "All %s posts"
@@ -248,7 +243,7 @@ msgstr "Tous les articles de %s"
 msgid ", "
 msgstr ", "
 
-#: content-portfolio-single.php:33 content.php:79
+#: content-portfolio-single.php:33 content.php:72
 msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
 msgstr "Lire la suite <span class=\"meta-nav\">&rarr;</span>"
 
@@ -269,13 +264,13 @@ msgstr "Un commentaire"
 msgid "Leave a comment"
 msgstr "Laisser un commentaire"
 
-#: content-page.php:23 content-portfolio-single.php:23 content-single.php:51
-#: content.php:52 inc/template-tags.php:130 templates/portfolio-page.php:75
+#: content-page.php:23 content-portfolio-single.php:23 content-single.php:43
+#: content.php:45 inc/template-tags.php:130 templates/portfolio-page.php:75
 msgid "Edit"
 msgstr "Modifier"
 
-#: content-page.php:18 content-portfolio-single.php:36 content-single.php:65
-#: content.php:82 templates/portfolio-page.php:68
+#: content-page.php:18 content-portfolio-single.php:36 content-single.php:57
+#: content.php:75 templates/portfolio-page.php:68
 msgid "Pages:"
 msgstr "Pages&nbsp;:"
 
@@ -393,7 +388,7 @@ msgstr "Jour: %s"
 msgid "Author: %s"
 msgstr "Auteur : %s"
 
-#. #-#-#-#-#  harmonic.pot (Harmonic 1.1.0-wpcom)  #-#-#-#-#
+#. #-#-#-#-#  harmonic.pot (Harmonic 1.1.1-wpcom)  #-#-#-#-#
 #. Template Name of the plugin/theme
 #: inc/customizer.php:28
 #: wp-content/themes/pub/harmonic/templates/portfolio-page.php

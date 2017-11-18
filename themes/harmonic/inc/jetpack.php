@@ -1,15 +1,11 @@
 <?php
 /**
  * Jetpack Compatibility File
- * See: http://jetpack.me/
+ * See: http://jetpack.com/
  *
  * @package harmonic
  */
 
-/**
- * Add theme support for Infinite Scroll.
- * See: http://jetpack.me/support/infinite-scroll/
- */
 function harmonic_jetpack_setup() {
 	add_theme_support( 'infinite-scroll', array(
 		'container'      => 'archive-container',
@@ -17,25 +13,35 @@ function harmonic_jetpack_setup() {
 		'render'         => 'harmonic_infinite_scroll_render',
 	) );
 
-	/**
-	 * Add theme support for Responsive Videos.
-	 */
+	// Add theme support for Responsive Videos.
 	add_theme_support( 'jetpack-responsive-videos' );
 
-	/**
-	 * Add theme support for Portfolio Custom Post Type.
-	 */
+	// Add theme support for Portfolio Custom Post Type.
 	add_theme_support( 'jetpack-portfolio', array(
 		'title'          => true,
 		'content'        => true,
 		'featured-image' => true,
 	) );
 
-	/**
-	 * Add theme support for Logo upload.
-	 */
+	// Add theme support for Site Logo.
 	add_image_size( 'harmonic-logo', 1000, 250 );
 	add_theme_support( 'site-logo', array( 'size' => 'harmonic-logo' ) );
+
+	// Add theme support for Content Options.
+	add_theme_support( 'jetpack-content-options', array(
+		'blog-display'    => 'content',
+		'post-details'    => array(
+			'stylesheet' => 'harmonic-style',
+			'date'       => '.posted-on',
+			'categories' => '.cat-links',
+			'tags'       => '.tags-links',
+		),
+		'featured-images' => array(
+			'archive'    => true,
+			'post'       => true,
+			'page'       => true,
+		),
+	) );
 }
 add_action( 'after_setup_theme', 'harmonic_jetpack_setup' );
 

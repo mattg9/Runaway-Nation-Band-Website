@@ -2,7 +2,7 @@
 Theme Name: Harmonic
 Theme URI: https://wordpress.com/themes/harmonic/
 Description: Harmonic makes your content sing. No matter if you are a band looking to get a record deal, a travel blogger wanting to document your trip around the world or just someone that wants to make their home on WordPress.
-Version: 1.1.1
+Version: 1.1.2
 Author: Automattic
 Author URI: https://wordpress.com/themes/
 License: GNU General Public License v2 or later
@@ -490,6 +490,7 @@ cite {
 5.0 Elements
 --------------------------------------------------------------*/
 hr {
+    background: currentcolor;
     border: 0;
     height: 1px;
     margin-bottom: 20px;
@@ -616,7 +617,9 @@ a:hover.button {
 }
 
 .hentry a.button {
+	border-color: currentcolor;
     clear: both;
+    color: inherit;
     display: table;
     font-size: 18px;
     font-size: 1.8rem;
@@ -624,7 +627,12 @@ a:hover.button {
     line-height: 1.11111;
     margin-top: 20px;
     padding: 10px 20px;
+    text-shadow: none;
     text-transform: uppercase;
+}
+
+.hentry a.button:hover {
+	color: inherit;
 }
 
 .reply a {
@@ -773,41 +781,44 @@ figure {
     margin: 0;
 }
 
-.gallery-columns-1 .gallery-item,
-.gallery-columns-5 .gallery-item,
-.gallery-columns-7 .gallery-item {
-    float: none;
+.gallery-item {
+    display: inline-block;
+    padding: 1.79104477%;
+    text-align: center;
+    vertical-align: top;
     width: 100%;
 }
 
-.gallery-columns-2 .gallery-item,
-.gallery-columns-4 .gallery-item,
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+
 .gallery-columns-8 .gallery-item {
-    width: 50%;
+    max-width: 12.5%;
 }
 
-.gallery-columns-3 .gallery-item,
-.gallery-columns-6 .gallery-item,
 .gallery-columns-9 .gallery-item {
-    width: 33.33333%;
-}
-
-.gallery-columns-2 .gallery-item:nth-of-type(2n-2),
-.gallery-columns-3 .gallery-item:nth-of-type(3n-3),
-.gallery-columns-4 .gallery-item:nth-of-type(2n-2),
-.gallery-columns-6 .gallery-item:nth-of-type(3n-3),
-.gallery-columns-8 .gallery-item:nth-of-type(2n-2),
-.gallery-columns-9 .gallery-item:nth-of-type(3n-3) {
-    clear: right;
-}
-
-.gallery-columns-2 .gallery-item:nth-of-type(2n-1),
-.gallery-columns-3 .gallery-item:nth-of-type(3n-2),
-.gallery-columns-4 .gallery-item:nth-of-type(2n-1),
-.gallery-columns-6 .gallery-item:nth-of-type(3n-2),
-.gallery-columns-8 .gallery-item:nth-of-type(2n-1),
-.gallery-columns-9 .gallery-item:nth-of-type(3n-2) {
-    clear: left;
+    max-width: 11.11%;
 }
 
 /* Make sure embeds and iframes fit their containers */
@@ -1947,6 +1958,15 @@ p.form-allowed-tags code {
     padding-top: 0;
 }
 
+.jetpack_widget_social_icons a:hover {
+	opacity: 0.7;
+}
+
+#slide-4 .widget.widget_google_translate_widget a {
+	color: #333;
+	text-shadow: none;
+}
+
 /*--------------------------------------------------------------
 12.0 Infinite Scroll
 --------------------------------------------------------------*/
@@ -2111,6 +2131,7 @@ main#para-template {
 .bcg {
     width: 100%;
     height: 100%;
+    background-position: 50% 0;
     background-size: cover;
 }
 
@@ -2134,7 +2155,7 @@ main#para-template {
 
 .hsContent {
     margin: 0 auto;
-    padding: 0 18px;
+    padding: 0 20px;
     text-shadow: 1px 1px 1px rgba(51, 47, 43, .8);
 }
 
@@ -2151,7 +2172,7 @@ main#para-template {
 }
 
 #para-template #slide-1 .hsContent #header-branding {
-    padding-top: 55%;
+    padding-top: 15%;
 }
 
 #para-template #slide-3 .hsContent #page-section {
@@ -2183,9 +2204,19 @@ body.single-post #slide-1 .hscontent {
     padding-top: 160px;
 }
 
-#para-template #slide-4 .hsContent .widget-area{
+#para-template #slide-4 .hsContent .widget-area {
     margin: none;
     padding: 60px 0;
+}
+
+#para-template #slide-4 .hsContent .widget-area:before,
+#para-template #slide-4 .hsContent .widget-area:after {
+	content: '';
+	display: table;
+}
+
+#para-template #slide-4 .hsContent .widget-area:after {
+	clear: both;
 }
 
 #para-template #slide-5 .hsContent #archive-container {
@@ -2398,6 +2429,12 @@ body[class*='jetpack-portfolio'].archive .page-content,
 	z-index: 9999 !important;
 }
 
+/* Tweak for Direct Manipulation icons z-index */
+
+.cdm-icon {
+    z-index: 50000 !important;
+}
+
 /*--------------------------------------------------------------
 15.0 Mediaqueries
 --------------------------------------------------------------*/
@@ -2537,7 +2574,7 @@ body[class*='jetpack-portfolio'].archive .page-content,
 
     #single-titles #single-wrap,
     #slide-feature #single-titles {
-        padding: 20% 0;
+        padding: 20% 0 0;
     }
 
     #slide-content {
@@ -2680,7 +2717,7 @@ body[class*='jetpack-portfolio'].archive .page-content,
         padding: 0 20px;
     }
 
-    #masthead.fixed-header {
+    #masthead {
         position: fixed;
         width: 100%;
     }
@@ -2845,4 +2882,3 @@ body[class*='jetpack-portfolio'].archive .page-content,
         padding-bottom: 64px;
     }
 }
-

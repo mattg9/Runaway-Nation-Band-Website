@@ -12,11 +12,7 @@
 		$slidethree_background = $slide_path . "/images/bcg_slide-3.jpg";
 	endif;
 
-	if (wp_is_mobile()) {
-		$slidethree_url = "background-image:none";
-	} else {
-		$slidethree_url = "background-image:url( ' " . esc_url( $slidethree_background ) . " ' )";
-	}
+	$slidethree_url = "background-image:url( ' " . esc_url( $slidethree_background ) . " ' )";
 
 	$slidethree_layer = esc_attr( get_theme_mod( 'harmonic_front_pagelayer' ) );
 

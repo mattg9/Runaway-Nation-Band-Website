@@ -2,14 +2,18 @@
 # This file is distributed under the same license as the WordPress.com - Themes - Harmonic package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2016-01-09 15:28:33+0000\n"
+"PO-Revision-Date: 2017-04-14 13:14:39+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: GlotPress/2.1.0-alpha\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
 "Language: he_IL\n"
 "Project-Id-Version: WordPress.com - Themes - Harmonic\n"
+
+#: inc/wpcom-colors.php:55
+msgid "Links & Buttons"
+msgstr "קישורים ולחצנים"
 
 #: inc/customizer.php:23
 msgid "Theme Options"
@@ -38,14 +42,14 @@ msgstr "התבנית הרמוניק גורמת לתוכן שלכם לשיר. ב�
 msgid "Search Results for: %s"
 msgstr "תוצאות החיפוש: %s"
 
-#: inc/template-tags.php:157
-msgid " (Edit)"
-msgstr "(עריכה)"
-
 #: page.php:48 single.php:42 templates/fullwidth-page.php:46
 #: templates/portfolio-page.php:44
 msgid "Read more"
 msgstr "קרא עוד"
+
+#: inc/template-tags.php:157
+msgid " (Edit)"
+msgstr "(עריכה)"
 
 #: inc/template-tags.php:154
 msgctxt "1: date, 2: time"
@@ -64,9 +68,23 @@ msgstr "התגובה ממתינה לאישור."
 msgid "Pingback:"
 msgstr "פינגבק:"
 
+#: inc/template-tags.php:108
+msgctxt "Next post link"
+msgid "Next"
+msgstr "הבא"
+
+#: inc/template-tags.php:107
+msgctxt "Previous post link"
+msgid "Previous"
+msgstr "הקודם"
+
 #: inc/template-tags.php:104
 msgid "Post navigation"
 msgstr "ניווט ברשומות"
+
+#: inc/template-tags.php:57
+msgid "More Projects"
+msgstr "פרויקטים נוספים"
 
 #: inc/template-tags.php:35
 msgid "<span class=\"meta-nav\">Next</span>"
@@ -75,10 +93,6 @@ msgstr "<span class=\"meta-nav\">הבא</span>"
 #: inc/template-tags.php:31
 msgid "<span class=\"meta-nav\">Previous</span>"
 msgstr "<span class=\"meta-nav\">הקודם</span>"
-
-#: inc/template-tags.php:57
-msgid "More Projects"
-msgstr "פרויקטים נוספים"
 
 #: inc/template-tags.php:27
 msgid "Posts navigation"
@@ -100,114 +114,114 @@ msgstr "חלק קדמי של תיק עבודות"
 msgid "Widgets"
 msgstr "וידג'טים"
 
-#: inc/customizer.php:154
-msgid "Hide Tagline"
-msgstr "הסתר את שורת התיוג"
-
-#: inc/customizer.php:165
-msgid "News"
-msgstr "עדכונים"
-
 #: inc/customizer.php:212
 msgid "Page"
 msgstr "עמוד"
-
-#: inc/customizer.php:142 inc/customizer.php:189 inc/customizer.php:236
-#: inc/customizer.php:283 inc/customizer.php:329
-msgid "Add background shade"
-msgstr "הוסף הצללת רקע"
 
 #: inc/customizer.php:200 inc/customizer.php:247 inc/customizer.php:294
 #: inc/customizer.php:340
 msgid "Footer Link Text"
 msgstr "טקסט קישור בפוטר"
 
+#: inc/customizer.php:165
+msgid "News"
+msgstr "עדכונים"
+
+#: inc/customizer.php:154
+msgid "Hide Tagline"
+msgstr "הסתר את שורת התיוג"
+
+#: inc/customizer.php:142 inc/customizer.php:189 inc/customizer.php:236
+#: inc/customizer.php:283 inc/customizer.php:329
+msgid "Add background shade"
+msgstr "הוסף הצללת רקע"
+
 #: inc/customizer.php:131 inc/customizer.php:178 inc/customizer.php:225
 #: inc/customizer.php:272 inc/customizer.php:318
 msgid "Background"
 msgstr "רקע"
 
-#: inc/customizer.php:44
-msgid "Landscape (4:3)"
-msgstr "רוחבי (4:3)"
-
-#: inc/customizer.php:46
-msgid "Square (1:1)"
-msgstr "ריבוע (1:1)"
-
-#: inc/customizer.php:51
-msgid "Visibility"
-msgstr "נראות"
-
 #: inc/customizer.php:118
 msgid "Title"
 msgstr "כותרת"
-
-#: inc/customizer.php:45
-msgid "Portrait (3:4)"
-msgstr "אופקי (3:4)"
-
-#: inc/customizer.php:62
-msgid "Hide Title Section"
-msgstr "הסתר מקטע 'כותרת'"
-
-#: inc/customizer.php:72
-msgid "Hide News Section"
-msgstr "הסתר מקטע 'חדשות'"
-
-#: inc/customizer.php:84
-msgid "Hide Page Section"
-msgstr "הסתר מקטע 'עמוד'"
-
-#: inc/customizer.php:96
-msgid "Hide Widgets Section"
-msgstr "הסתר מקטע 'וידג'טים'"
 
 #: inc/customizer.php:108
 msgid "Hide Front Portfolio Section"
 msgstr "הסתר מקטע 'תיק עבודות קדמי'"
 
-#: inc/customizer.php:24
-msgid "Harmonic Theme Options"
-msgstr "אפשרויות תבנית הרמוניק"
+#: inc/customizer.php:96
+msgid "Hide Widgets Section"
+msgstr "הסתר מקטע 'וידג'טים'"
+
+#: inc/customizer.php:84
+msgid "Hide Page Section"
+msgstr "הסתר מקטע 'עמוד'"
+
+#: inc/customizer.php:72
+msgid "Hide News Section"
+msgstr "הסתר מקטע 'חדשות'"
+
+#: inc/customizer.php:62
+msgid "Hide Title Section"
+msgstr "הסתר מקטע 'כותרת'"
+
+#: inc/customizer.php:51
+msgid "Visibility"
+msgstr "נראות"
+
+#: inc/customizer.php:46
+msgid "Square (1:1)"
+msgstr "ריבוע (1:1)"
+
+#: inc/customizer.php:45
+msgid "Portrait (3:4)"
+msgstr "אופקי (3:4)"
+
+#: inc/customizer.php:44
+msgid "Landscape (4:3)"
+msgstr "רוחבי (4:3)"
 
 #: inc/customizer.php:39
 msgid "Portfolio Thumbnail Aspect Ratio"
 msgstr "יחס גובה רוחב של תמונה מוקטנת של תיק עבודות"
 
-#: header-featureimage.php:28 header-para.php:28 header-portfolio.php:28
-#: header-singleportfolio.php:28 header.php:28
+#: inc/customizer.php:24
+msgid "Harmonic Theme Options"
+msgstr "אפשרויות תבנית הרמוניק"
+
+#: header-featureimage.php:27 header-para.php:27 header-portfolio.php:27
+#: header-singleportfolio.php:27 header.php:27
 msgid "Menu"
 msgstr "תפריט"
 
 #. translators: If there are characters in your language that are not supported
 #. by Arimo, translate this to 'off'. Do not translate into your own
 #. language.
-#: functions.php:123
+#: functions.php:132
 msgctxt "Hind sans-serif font: on or off"
 msgid "on"
 msgstr "על"
 
-#: functions.php:100
+#: functions.php:109
 msgid "Front page"
 msgstr "עמוד ראשי"
 
-#: functions.php:66
-msgid "Social Links Menu"
-msgstr "תפריט קישורי מדיה חברתית"
-
-#: functions.php:92
+#: functions.php:101
 msgid "Sidebar"
 msgstr " סרגל צדדי"
 
-#: functions.php:65
+#: functions.php:75
+msgid "Social Links Menu"
+msgstr "תפריט קישורי מדיה חברתית"
+
+#: functions.php:74
 msgid "Primary Menu"
 msgstr "תפריט ראשי"
 
-#: footer-para.php:14 header-featureimage.php:34 header-featureimage.php:56
-#: header-para.php:35 header-para.php:57 header-portfolio.php:34
-#: header-portfolio.php:56 header-singleportfolio.php:35
-#: header-singleportfolio.php:57 header.php:35 header.php:57
+#: footer-para.php:14 header-featureimage.php:33 header-featureimage.php:55
+#: header-para.php:34 header-para.php:56 header-portfolio.php:33
+#: header-portfolio.php:55 header-singleportfolio.php:34
+#: header-singleportfolio.php:56 header.php:34 header.php:56
 msgid "Skip to content"
 msgstr "דילוג לתוכן"
 
@@ -221,13 +235,9 @@ msgstr "ערכת עיצוב: %1$s של %2$s"
 msgid "Proudly powered by %s"
 msgstr "פועל על %s"
 
-#: content.php:61
+#: content.php:54
 msgid "Permalink to %s"
 msgstr "קישור קבוע לרשומה %s"
-
-#: content-single.php:47
-msgid "%1$s"
-msgstr "%1$s"
 
 #: content-single.php:29 content.php:13
 msgid "All %s posts"
@@ -238,14 +248,14 @@ msgstr "כל הרשומות של %s"
 msgid ", "
 msgstr ", "
 
+#: content-portfolio-single.php:33 content.php:72
+msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
+msgstr "להמשיך לקרוא <span class=\"meta-nav\">&larr;</span>"
+
 #: content-portfolio-single.php:21
 msgctxt "Used between list items, there is a space after the comma."
 msgid ", "
 msgstr ", "
-
-#: content-portfolio-single.php:33 content.php:79
-msgid "Continue reading <span class=\"meta-nav\">&rarr;</span>"
-msgstr "להמשיך לקרוא <span class=\"meta-nav\">&larr;</span>"
 
 #: content-portfolio-single.php:18 content-single.php:36 content.php:38
 msgid "% Comments"
@@ -259,13 +269,13 @@ msgstr "תגובה אחת"
 msgid "Leave a comment"
 msgstr "השארת תגובה"
 
-#: content-page.php:23 content-portfolio-single.php:23 content-single.php:51
-#: content.php:52 inc/template-tags.php:130 templates/portfolio-page.php:75
+#: content-page.php:23 content-portfolio-single.php:23 content-single.php:43
+#: content.php:45 inc/template-tags.php:130 templates/portfolio-page.php:75
 msgid "Edit"
 msgstr "עריכה"
 
-#: content-page.php:18 content-portfolio-single.php:36 content-single.php:65
-#: content.php:82 templates/portfolio-page.php:68
+#: content-page.php:18 content-portfolio-single.php:36 content-single.php:57
+#: content.php:75 templates/portfolio-page.php:68
 msgid "Pages:"
 msgstr ":עמודים"
 
@@ -286,13 +296,13 @@ msgstr "לא מצאתי כלום"
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr "נראה כי לא ניתן למצוא את מה שחיפשת, אולי חיפוש יעזור."
 
-#: content-front-portfolio.php:78 templates/portfolio-page.php:116
-msgid "No Project Found"
-msgstr "לא נמצא פרוייקט"
-
 #: content-front-portfolio.php:84 templates/portfolio-page.php:122
 msgid "Ready to publish your first project? <a href=\"%1$s\">Get started here</a>."
 msgstr "<span dir=rtl>מוכן לפרסם את הפרויקט הראשון שלך?</span> <span dir=rtl><a href=\"%1$s\">התחל כאן</a>.</span>"
+
+#: content-front-portfolio.php:78 templates/portfolio-page.php:116
+msgid "No Project Found"
+msgstr "לא נמצא פרוייקט"
 
 #: comments.php:63
 msgid "Comments are closed."
@@ -371,24 +381,24 @@ msgctxt "monthly archives date format"
 msgid "F Y"
 msgstr "F Y"
 
-#: archive.php:30
-msgid "Day: %s"
-msgstr "יום: %s"
-
 #: archive.php:33
 msgid "Month: %s"
 msgstr "חודש: %s"
 
-#. #-#-#-#-#  harmonic.pot (Harmonic 1.0.14-wpcom)  #-#-#-#-#
-#. Template Name of the plugin/theme
-#: archive-jetpack-portfolio.php:18 inc/customizer.php:28
-#: wp-content/themes/pub/harmonic/templates/portfolio-page.php
-msgid "Portfolio"
-msgstr "תיק עבודות"
+#: archive.php:30
+msgid "Day: %s"
+msgstr "יום: %s"
 
 #: archive.php:27
 msgid "Author: %s"
 msgstr "מחבר: %s"
+
+#. #-#-#-#-#  harmonic.pot (Harmonic 1.1.1-wpcom)  #-#-#-#-#
+#. Template Name of the plugin/theme
+#: inc/customizer.php:28
+#: wp-content/themes/pub/harmonic/templates/portfolio-page.php
+msgid "Portfolio"
+msgstr "תיק עבודות"
 
 #: 404.php:19
 msgid "It looks like nothing was found at this location. Maybe try a search?"
