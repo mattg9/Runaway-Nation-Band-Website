@@ -1,0 +1,105 @@
+/*
+Theme Name: Harmonic Child
+Theme URI: https://wordpress.com/themes/harmonic/
+Template: harmonic
+Author: Matthew Gaston
+Author URI: https://wordpress.com/themes/
+Description: Harmonic makes your content sing. No matter if you are a band looking to get a record deal, a travel blogger wanting to document your trip around the world or just someone that wants to make their home on WordPress.
+Tags: blog,custom-colors,custom-header,custom-menu,editor-style,featured-images,one-column,photography,portfolio,post-formats,rtl-language-support,sticky-post,theme-options,translation-ready,two-columns
+Version: 1.1.1.1509986254
+Updated: 2017-11-06 16:37:34
+
+*/
+
+hr {
+    background-color: currentcolor;
+}
+.hentry a.button {
+    color: inherit;
+    text-shadow: none;
+    border-color: currentcolor;
+}
+body.page-template-templatesfront-page-php.loading {
+    background-image: url('images/ico_loading.gif');
+}
+body.single.loading {
+    background-image: url('images/ico_loading.gif');
+}
+.bcg {
+    background-position: 50% 0;
+}
+.hsContent {
+    padding-right: 20px;
+    padding-left: 20px;
+}
+#para-template #slide-1 .hsContent #header-branding {
+    padding-top: 15%;
+}
+.hentry a.button:hover {
+    color: inherit;
+}
+.gallery-item {
+    width: 100%;
+    text-align: center;
+    display: inline-block;
+    vertical-align: top;
+    padding: 1.79104477%;
+}
+.gallery-columns-2 .gallery-item {
+    max-width: 50%;
+}
+.gallery-columns-3 .gallery-item {
+    max-width: 33.33%;
+}
+.gallery-columns-4 .gallery-item {
+    max-width: 25%;
+}
+.gallery-columns-5 .gallery-item {
+    max-width: 20%;
+}
+.gallery-columns-6 .gallery-item {
+    max-width: 16.66%;
+}
+.gallery-columns-7 .gallery-item {
+    max-width: 14.28%;
+}
+.gallery-columns-8 .gallery-item {
+    max-width: 12.5%;
+}
+.gallery-columns-9 .gallery-item {
+    max-width: 11.11%;
+}
+.jetpack_widget_social_icons a:hover {
+    opacity: 0.7;
+}
+#slide-4 .widget.widget_google_translate_widget a {
+    color: #333;
+    text-shadow: none;
+}
+#para-template #slide-4 .hsContent .widget-area:before, #para-template #slide-4 .hsContent .widget-area:after {
+    display: table;
+    content: '';
+}
+#para-template #slide-4 .hsContent .widget-area:after {
+    clear: both;
+}
+.cdm-icon {
+    z-index: 50000 !important;
+}
+@media only screen and (min-width: 40.063em) {
+#single-titles #single-wrap, #slide-feature #single-titles {
+    padding-bottom: 0;
+}
+}
+@media only screen and (min-width: 64.063em) {
+body.page-template-templatesfront-page-php.loading {
+    background-image: url('images/ico_loading.gif');
+}
+body.single.loading {
+    background-image: url('images/ico_loading.gif');
+}
+#masthead {
+    width: 100%;
+    position: fixed;
+}
+}
